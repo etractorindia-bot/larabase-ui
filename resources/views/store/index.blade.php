@@ -32,7 +32,7 @@
                         <div class="muted" style="margin-bottom: .5rem; font-weight: 700;">Categories</div>
                         <div class="pill-row">
                             @foreach ($categories as $slug => $label)
-                                <a href="{{ route('store.index', array_filter(['category' => $slug, 'age' => $selectedAge])) }}"
+                                <a href="{{ route('store.index', array_filter(['category' => $slug, 'age' => $selectedAge], fn ($value) => $value !== '' && $value !== null)) }}"
                                    class="pill"
                                    style="{{ $selectedCategory === $slug ? 'background:#7c3aed;color:white;border-color:#7c3aed;' : '' }}">{{ $label }}</a>
                             @endforeach

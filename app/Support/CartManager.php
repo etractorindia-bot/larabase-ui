@@ -43,7 +43,7 @@ class CartManager
 
     public function remove(string $lineKey): void
     {
-        $cart = session()->forget("store_cart.$lineKey");
+        session()->forget("store_cart.$lineKey");
     }
 
     public function clear(): void
