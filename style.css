@@ -1,0 +1,164 @@
+:root {
+  --green: #0f6b3f;
+  --green-dark: #0a4c2c;
+  --accent: #ffca28;
+  --text: #1a1a1a;
+  --muted: #f4f7f5;
+  --white: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text);
+  line-height: 1.6;
+  background: var(--white);
+}
+
+.hero {
+  background: linear-gradient(120deg, rgba(10, 76, 44, 0.9), rgba(15, 107, 63, 0.85));
+  color: var(--white);
+  padding-bottom: 3rem;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-content {
+  max-width: 1100px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.18);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent);
+  color: #222;
+  text-decoration: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.45rem;
+  font-weight: 700;
+}
+
+.btn-secondary {
+  background: var(--green);
+  color: var(--white);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  padding: 3.5rem 0;
+}
+
+.section-muted {
+  background: var(--muted);
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 1.75rem;
+}
+
+.section-subtitle {
+  max-width: 780px;
+}
+
+.stats,
+.card-grid,
+.contact-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 1rem;
+}
+
+.card,
+.stats article {
+  background: var(--white);
+  border: 1px solid #e7ece9;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+
+.attachment-list {
+  columns: 2;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.attachment-list li {
+  margin-bottom: 0.35rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+.footer {
+  background: #111;
+  color: #ddd;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media (max-width: 700px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .attachment-list {
+    columns: 1;
+  }
+}
