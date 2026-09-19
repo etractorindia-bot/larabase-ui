@@ -149,13 +149,13 @@ body {
   padding: 1rem;
 }
 
-.attachment-list {
+.module-list {
   display: block;
   margin-top: 1rem;
   padding-left: 1.25rem;
 }
 
-.attachment-list li {
+.module-list li {
   margin-bottom: 0;
 }
 
