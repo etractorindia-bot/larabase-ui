@@ -146,6 +146,11 @@ body {
   text-align: center;
 }
 
+.contact a {
+  color: var(--green-dark);
+  font-weight: 700;
+}
+
 .footer {
   background: #111;
   color: #ddd;
