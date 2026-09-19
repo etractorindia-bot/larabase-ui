@@ -39,6 +39,8 @@ body {
 .brand {
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .nav ul {
@@ -54,6 +56,12 @@ body {
   color: var(--white);
   text-decoration: none;
   font-weight: 600;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
 }
 
 .hero-content {
@@ -85,6 +93,13 @@ body {
   padding: 0.7rem 1rem;
   border-radius: 0.45rem;
   font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  filter: brightness(0.95);
+  outline: 2px solid #222;
+  outline-offset: 2px;
 }
 
 .btn-secondary {
@@ -149,6 +164,12 @@ body {
 .contact a {
   color: var(--green-dark);
   font-weight: 700;
+  text-decoration: underline;
+}
+
+.contact a:hover,
+.contact a:focus-visible {
+  color: var(--green);
 }
 
 .footer {
