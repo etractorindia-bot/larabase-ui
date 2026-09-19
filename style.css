@@ -1,9 +1,9 @@
 :root {
-  --green: #0f6b3f;
-  --green-dark: #0a4c2c;
-  --accent: #ffca28;
+  --green: #3b5bdb;
+  --green-dark: #243b91;
+  --accent: #ffd43b;
   --text: #1a1a1a;
-  --muted: #f4f7f5;
+  --muted: #f5f7ff;
   --white: #ffffff;
 }
 
@@ -20,7 +20,7 @@ body {
 }
 
 .hero {
-  background: linear-gradient(120deg, rgba(10, 76, 44, 0.9), rgba(15, 107, 63, 0.85));
+  background: linear-gradient(120deg, rgba(36, 59, 145, 0.92), rgba(59, 91, 219, 0.85));
   color: var(--white);
   padding-bottom: 3rem;
 }
@@ -134,26 +134,11 @@ body {
 }
 
 .stats,
-.card-grid,
-.contact-grid {
+.card-grid {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   margin-top: 1rem;
-}
-
-.contact-grid {
-  font-style: normal;
-}
-
-.contact-grid ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.contact-grid li {
-  margin-bottom: 0.5rem;
 }
 
 .card,
@@ -176,6 +161,11 @@ body {
 
 .contact {
   text-align: center;
+}
+
+.contact-details {
+  font-style: normal;
+  margin-top: 1rem;
 }
 
 .contact a {
