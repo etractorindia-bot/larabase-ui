@@ -142,6 +142,10 @@ body {
   margin-top: 1rem;
 }
 
+.contact-grid {
+  font-style: normal;
+}
+
 .card,
 .stats article {
   background: var(--white);
