@@ -1,4 +1,4 @@
-# larabase-ui
+# Ashok Argade Website
 
 Simple static website for **Ashok Argade**, founder of **Omagro Group**.
 
